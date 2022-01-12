@@ -1,6 +1,8 @@
-function draw(){
-    background("red");
-    fill("yellow");
-    text(mouseY,50,50);
-    text(mouseX,10,50);
+// On a touchscreen device, touch
+// the canvas using one or more fingers
+// at the same time
+function draw() {
+  clear();
+  let display = touches.length + ' touches';
+  text(display, 5, 10);
 }
